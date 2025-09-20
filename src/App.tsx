@@ -25,10 +25,11 @@ export default function App(){
             <Route path="/auth/register" element={<RegisterPage/>} />
             <Route path="/login" element={<LoginPage />} />
             <Route path="/" element={<PrivateRoute><TransactionsPage /></PrivateRoute>} />
-            <Route path="/school/:schoolId" element={<PrivateRoute><SchoolTransactionsPage /></PrivateRoute>} />
+            <Route path="/schools/:schoolId/transactions" element={<SchoolTransactionsPage />} />
             <Route path="/status-check" element={<PrivateRoute><StatusCheckPage /></PrivateRoute>} />
             <Route path="/create-payment" element={<PrivateRoute><CreatePaymentPage /></PrivateRoute>} />
 <Route path="/school/:schoolId" element={<PrivateRoute><SchoolTransactionsPage /></PrivateRoute>} />
+           <Route path="*" element={<div>Not found</div>} />
           </Routes>
         </main>
       </div>

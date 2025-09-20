@@ -1,6 +1,6 @@
 import React from "react";
 import { Card, CardContent, CardHeader, CardTitle } from "../components/ui/Cards";
-import Button from "../components/ui/Button";
+import {Button} from "../components/ui/Button";
 import {
   BarChart,
   Bar,

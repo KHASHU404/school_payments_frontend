@@ -1,7 +1,7 @@
 // src/pages/StatusCheckPage.tsx
 import React, { useState } from 'react';
 import api from '../api/axios';
-import Button from '../components/ui/Button';
+import { Button } from '../components/ui/Button';
 
 export default function StatusCheckPage() {
   const [id, setId] = useState('');

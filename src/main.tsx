@@ -8,9 +8,11 @@ import { AnimatePresence } from 'framer-motion'
 import { BrowserRouter } from 'react-router-dom'
 import { AuthProvider } from './utils/auth'
 import PrivateRoute from './components/PrivateRoute'
+import { ThemeProvider } from './context/ThemeContext'
 
 ReactDOM.createRoot(document.getElementById('root')!).render(
   <React.StrictMode>
+    <ThemeProvider>
     <BrowserRouter>
       <AnimatePresence mode="wait">
   <div>
@@ -20,9 +22,10 @@ ReactDOM.createRoot(document.getElementById('root')!).render(
       toastOptions={{
         style: { borderRadius: 8, padding: '8px 12px' },
       }}
-    />
+      />
   </div>
 </AnimatePresence>
     </BrowserRouter>
+      </ThemeProvider>
   </React.StrictMode>
 )
